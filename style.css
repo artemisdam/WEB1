@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box; /* Sets the box-sizing property for all elements to border-box */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Sets the font family for the body text */
+  margin: 0; /* Removes default margin for the body element */
+}
+
+header {
+  background-color: #113a7a; /* Sets the background color for the header element */
+   padding: 30px; /* Adds padding to the header element */
+   height: 150px; /* Sets the height for the header element */
+   text-align: center; /* Centers the text within the header element */
+   font-size: 35px; /* Sets the font size for the text within the header element */
+   color: white; /* Sets the color for the text within the header element */
+}
+
+h2 {
+ color: #79afed !important; /* Sets the color for all h2 elements, with the !important flag to override any other styles */
+}
+
+.activite {
+  color: #79afed !important; /* Sets the color for elements with the class 'activite', with the !important flag to override any other styles */
+}
+
+span {
+  color: #f1f1f1 !important; /* Sets the color for all span elements, with the !important flag to override any other styles */
+
+}
+
+.logo {
+  width: 50%; /* Sets the width for elements with the class 'logo' */
+  float: left; /* Floats the elements with the class 'logo' to the left */
+}
+
+.menu {
+  width: 50%; /* Sets the width for elements with the class 'menu' */
+  float: left; /* Floats the elements with the class 'menu' to the left */
+}
+
+.topMenu {
+  float: left; /* Floats elements with the class 'topMenu' to the left */
+}
+
+.banner {
+  background-image: url('sea.JPG'); /* Sets the background image for the banner element */
+  align:center; /* Invalid property value - should be 'text-align: center' */
+  background-size: 100%; /* Sets the background size to 100% for the banner element */
+  background-position: bottom; /* Sets the background position to bottom for the banner element */
+  height: 800px; /* Sets the height for the banner element */
+}
+
+.banner p {
+  width: 100%; /* Sets the width for p elements within the banner element */
+    color: #f1f1f1; /* Sets the color for the text within p elements in the banner element */
+    font-size: 42px; /* Sets the font size for the text within p elements in the banner element */
+    font-weight: bold; /* Sets the font weight for the text within p elements in the banner element */
+    text-align: center; /* Centers the text within p elements in the banner element */
+    text-shadow: 2px 2px 2px #333; /* Adds a text shadow to the text within p elements in the banner element */
+    position: absolute; /* Positions the p element absolutely within the banner element */
+    padding: 300px; /* Adds padding to the p element within the banner element */
+}
+
+.col {
+  width: 100%; /* Sets the width for elements with the class 'col' */
+  height: 600px; /* Sets the height for elements with the class 'col' */
+  background-color: #f1f1f1; /* Sets the background color for elements with the class 'col' */
+  padding: 40px; /* Adds padding to elements with the class 'col' */
+}
+/* Set the width, height, margin and text alignment for columns with class 'col-1' */
+.col-1 {
+  width: 30%;
+  height: 400px;
+  margin: 23px;
+  text-align: center;
+}
+/* Set the width, height, border radius, display and margin for class 'colImage' */
+.colImage {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+}
+/* Set the width, margin, padding, float, background color, text color and font weight for class 'contact' */
+.contact {
+  width: 28%;
+  margin: 0 auto;
+  padding: 30px;
+  float: right;
+}
+/* Set the background color, padding, width, text color and font weight for class 'getButton' */
+.getButton {
+  background-color: #113a7a;
+  padding: 10px;
+  width: 130px;
+  color: #fff;
+  font-weight: bold;
+}
+/* Set the padding for class 'getText' */
+.getText {
+  padding: 10px;
+}
+/* Set the float, width, padding and text color for navigation menu */
+nav {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  color: #fff;
+}
+/* Set the list style type, padding, margin, margin-left and text color for list items in navigation menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  list-style-type: none;
+  margin: 10px;
+  margin-left: 20px;
+}
+/* Set the text color and text decoration for links in navigation menu */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 21px;
+}
+/* Set the float, padding, width, background color and clear for article */
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.about {
+  padding: 50px;
+  width: 50%;
+  float: left;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+/* Set the background color, text color, padding and border for class 'aboutSub' */
+.aboutSub {
+  background-color: #1d2b45;
+  color: #fff;
+  padding: 10px;
+}
+/* Set the width, float, background color, text color and padding for 'aside' */
+aside {
+  width: 20%;
+  float: left;
+  background-color: #1d2b45;
+  color: #fff;
+  padding: 20px;
+  float: right;
+  margin-right: 300px;
+}
+/* Set the background color and height for class 'portview' */
+.portview{
+  background-color:#f1f1f1;
+  width: 100%;
+  height: 30%;
+}
+/* Clear the float for section */
+/*it is a pseudo-element that represents a virtual element that is inserted after the content of the section element. */
+section::after {
+  /*the content of the pseudo-element to an empty string.*/
+  content: "";
+  /*the display property of the pseudo-element to table, which allows it to behave like a table element. */
+  display: table;
+  /*it clears any floated elements that come before the pseudo-element.*/
+  clear: both;
+}
+
+.projectList {
+  width: 60%; /* sets the width of the element with class "projectList" to 60% of its parent element's width */
+  margin-top: 30px; /* sets the top margin of the element with class "projectList" to 30px */
+}
+
+.projectListRow {
+  background-color: #d9d9d9; /* sets the background color of elements with class "projectListRow" to #d9d9d9 */
+  border: solid 1px #9f9f9f; /* sets a 1px solid border with color #9f9f9f for elements with class "projectListRow" */
+  padding: 10px; /* sets the padding for elements with class "projectListRow" to 10px */
+  margin-top: 5px; /* sets the top margin of elements with class "projectListRow" to 5px */
+  display: grid; /* sets the display property of elements with class "projectListRow" to grid */
+}
+
+.projectImage {
+  width: 80px; /* sets the width of elements with class "projectImage" to 80px */
+    height: 80px; /* sets the height of elements with class "projectImage" to 80px */
+    border-radius: 100%; /* sets the border-radius of elements with class "projectImage" to 100%, making them circular */
+    margin-right: 20px; /* sets the right margin of elements with class "projectImage" to 20px */
+    float: left; /* sets the float property of elements with class "projectImage" to left */
+}
+
+.required:after {
+  content: " *"; /* sets the content that will be inserted after the required elements */
+  color: red; /* sets the color of the content */
+}
+
+footer {
+  background-color: #113a7a;
+  padding: 60px;
+  text-align: center;
+  color: white;
+  height: 200px;
+  width: 100%;
+}
+/*CSS code allows you to automatically set the width and height of navigation*/
+/*Article elements to 100% when the screen width is less than 600px (for mobile).*/
+/*Thus, these elements are sized appropriately according to the screen size and displayed properly.*/
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+
+}

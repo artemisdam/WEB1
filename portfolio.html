@@ -1,0 +1,126 @@
+<!-- declares the document type as HTML5 -->
+<!DOCTYPE html>
+<!--This tag indicates the beginning of an HTML document and sets the language to English.-->
+<html lang="en">
+<!--the head information for the HTML document. -->
+    <head>
+      <!--The title name for the page-->
+        <title>Portfolio Jill Blog </title>
+        <!--sets the character encoding to UTF-8-->
+        <meta charset="utf-8">
+        <!--includes a viewport meta tag for responsive design-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--links to an external stylesheet that contains the CSS rules-->
+        <link rel="stylesheet" href="../CSS/style.css">
+    </head>
+    <body>
+      <!-- Header section -->
+        <header>
+          <!-- Logo menu -->
+            <h2 class="logo">Acme
+                <span>Web Design</span>
+            </h2>
+            <!-- Navigation menu -->
+            <nav>
+                <ul class="topMenu">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="activite" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Contact section -->
+        <section class="contact">
+            <input class="getText" type="text" placeholder="Enter Email">
+            <input class="getButton" type="submit" value="Get in Touch">
+        </section>
+        <!-- br for a single line break here I used two times break line-->
+        <br><br>
+
+
+        <section>
+          <!--The article tag is also an article, etc. It allows long articles such as coexistence.-->
+            <article class="projectList">
+              <!-- header -->
+                <h1>Projects</h1>
+                <article class="projectListRow">
+                  <!-- header -->
+                    <h3>Java Project</h3>
+                    <!-- paragraph -->
+                    <p>
+                      <!-- Image -->
+                        <img class="projectImage" src="../images/java-project.jpg">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                        in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                        old.</p>
+                </article>
+                <article class="projectListRow">
+                  <!-- header -->
+                    <h3>Relational Database</h3>
+                    <!-- paragraph -->
+                    <p>
+                      <!-- Image -->
+                        <img class="projectImage" src="../images/RelationalDatabase.jpg">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                        in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                        old.</p>
+                </article>
+                <article class="projectListRow">
+                  <!-- header -->
+                    <h3>Web Design</h3>
+                    <!-- paragraph -->
+                    <p>
+                        <!-- Image -->
+                        <img class="projectImage" src="../images/RelationalDatabase.jpg">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                        in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                        old.</p>
+                </article>
+            </article>
+
+            <section class="portview">
+                <!--HTML aside, it's an element used to group together expressions with the same content.-->
+            <aside>
+              <!--paragraph-->
+                <p>I'D LOVE TO HEAR FROM YOU</p>
+                <!--form tag and sets the action attribute to "/action_page.php", which specifies where the form data will be sent when the form is submitted.-->
+                <form action="/action_page.php">
+                  <!--create a label and an input field for the user's name.-->
+                  <!--The for attribute of the label tag is set to "name" so that when the user clicks on the label-->
+                    <label for="name">Name :</label><br>
+                    <!--input field -->
+                    <!--The HTML input required attribute specifies that an input field must be filled before submitting the form. -->
+                    <input
+                        class="required"
+                        type="text"
+                        id="name"
+                        name="fname"
+                        placeholder="Name"
+                        required><br><br>
+                        <!--The <label> tag defines a title for the <input> tag. -->
+                    <label for="email">Email :</label>
+                      <!-- br for a single line break here-->
+                    <br>
+                    <!--The <input> tag defines an input field where the user can enter data. -->
+                    <!--Specifies the name of the <input> element-->
+                    <input type="text" id="email" name="lname" placeholder="Email"><br><br>
+                    <label for="message">Message :</label><br>
+                    <textarea name="message" rows="4" cols="30" placeholder="Message..."></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </aside>
+              </section>
+        </section>
+          <!--footer tag is usually used at the bottom of the page for contact informations-->
+        <footer>
+          <p>DAMLA PATAR, Copyright @ 2023</p>
+        </footer>
+
+    </body>
+</html>
